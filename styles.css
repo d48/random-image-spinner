@@ -5,9 +5,10 @@ body {
 }
 
 #slotMachine {
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
+  height: 80vh;
   overflow: hidden;
+  /* border: 1px solid #000; */
   position: relative;
 }
 
@@ -21,9 +22,22 @@ button {
   font-size: 1.5em;
   border-radius: 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 button:hover,
 button:active {
   background-color: white;
+}
+
+@media screen and (min-width: 480px) {
+  button {
+    font-size: 2.5em;
+  }
+
+  * {
+    touch-action: manipulation;
+  }
 }
