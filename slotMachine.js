@@ -9,6 +9,26 @@ const images = [
   "images/8.png",
   "images/9.png",
   "images/10.png",
+  "images/11.png",
+  "images/12.png",
+  "images/13.png",
+  "images/14.png",
+  "images/15.png",
+  "images/16.png",
+  "images/17.png",
+  "images/18.png",
+  "images/19.png",
+  "images/20.png",
+  "images/21.png",
+  "images/22.png",
+  "images/23.png",
+  "images/24.png",
+  "images/25.png",
+  "images/26.png",
+  "images/27.png",
+  "images/28.png",
+  "images/29.png",
+  "images/300.png",
 ];
 
 let currentIndex = 0;
@@ -25,7 +45,7 @@ function loadImages() {
 }
 
 function startAnimation() {
-  stopIndex = Math.floor(Math.random() * images.length);
+  let stopIndex = Math.floor(Math.random() * images.length);
 
   const interval = setInterval(() => {
     currentIndex++;
