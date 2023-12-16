@@ -1,3 +1,4 @@
+let stopIndex = 0;
 const images = [
   "images/1.png",
   "images/2.png",
@@ -45,7 +46,7 @@ function loadImages() {
 }
 
 function startAnimation() {
-  let stopIndex = Math.floor(Math.random() * images.length);
+  stopIndex = Math.floor(Math.random() * images.length);
 
   const interval = setInterval(() => {
     currentIndex++;
